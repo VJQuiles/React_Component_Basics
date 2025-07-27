@@ -1,5 +1,5 @@
 import React from "react"
-import { AlertBoxProps } from "../../types"
+import type { AlertBoxProps } from "../../types"
 
 export const AlertBox: React.FC<AlertBoxProps> = ({
     type,
@@ -22,8 +22,8 @@ export const AlertBox: React.FC<AlertBoxProps> = ({
                     <button
                         onClick={onClose}
                         className="btn-close ms-2"
+                        aria-label="close"
                     >
-                        x
                     </button>
                 )}
                 <div>
