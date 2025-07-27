@@ -2,9 +2,9 @@ import React from "react"
 import { AlertBoxProps } from "../../types"
 
 export const AlertBox: React.FC<AlertBoxProps> = ({
-    propTypes,
+    type,
     message,
-    onCLose,
+    onClose,
     children
 }) => {
     const alertStyles = {
@@ -15,8 +15,21 @@ export const AlertBox: React.FC<AlertBoxProps> = ({
     }
 
     return (
-        <div>
-            <div></>
+        <div className={`alert ${alertStyles[type]}`}>
+            <div className="d-flex justify-content-between align-items-center">
+                <p className="mb-0">{message}</p>
+                {onClose && (
+                    <button
+                        onClick={onClose}
+                        className="btn-close ms-2"
+                    >
+                        x
+                    </button>
+                )}
+                <div>
+                    {children}
+                </div>
+            </div>
         </div>
     )
 }
