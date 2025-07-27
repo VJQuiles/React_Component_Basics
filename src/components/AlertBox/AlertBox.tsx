@@ -1,8 +1,22 @@
-export type AlertType = 'success' | 'error' | 'warning' | 'info'
+import React from "react"
+import { AlertBoxProps } from "../../types"
 
-export interface AlertBoxProps {
-    type: AlertType
-    message: string
-    onClose?: () => void
-    children?: React.ReactNode
+export const AlertBox: React.FC<AlertBoxProps> = ({
+    propTypes,
+    message,
+    onCLose,
+    children
+}) => {
+    const alertStyles = {
+        success: 'alert alert-success',
+        error: 'alert alert-danger',
+        warning: 'alert alert-warning',
+        info: 'alert alert ',
+    }
+
+    return (
+        <div>
+            <div></>
+        </div>
+    )
 }
