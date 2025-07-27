@@ -1,6 +1,8 @@
 import React from "react"
 import type { UserProfileCardProps } from "../../types"
 
+/** A componenet that displays user profile details like name, email, role, and avatar. It also allows for editing.*/
+
 export const UserProfileCard: React.FC<UserProfileCardProps> = ({
     user,
     showEmail,

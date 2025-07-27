@@ -1,6 +1,8 @@
 import React from "react"
 import type { AlertBoxProps } from "../../types"
 
+/** An alert component that helps to identify the status of an application  via color and message. It Generates a message and a button that allows you to 'close' the card.*/
+
 export const AlertBox: React.FC<AlertBoxProps> = ({
     type,
     message,

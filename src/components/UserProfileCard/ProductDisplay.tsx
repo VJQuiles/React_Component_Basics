@@ -1,6 +1,8 @@
 import React from "react"
 import type { ProductDisplayProps } from "../../types"
 
+/** This card componenet displays product details such as name, price, availability status, and description. It allows the user to add to cart as well.*/
+
 export const ProductDisplay: React.FC<ProductDisplayProps> = ({
     product,
     showDescription,
