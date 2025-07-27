@@ -8,8 +8,6 @@ export interface AlertBoxProps {
 }
 
 
-
-
 export interface User {
     id: string
     name: string
@@ -17,6 +15,7 @@ export interface User {
     role: string
     avatarUrl?: string
 }
+
 
 export interface UserProfileCardProps {
     user: User
@@ -27,8 +26,6 @@ export interface UserProfileCardProps {
 }
 
 
-
-
 export interface Product {
     id: string
     name: string
@@ -37,6 +34,7 @@ export interface Product {
     imageUrl?: string
     inStock: boolean
 }
+
 
 export interface ProductDisplayProps {
     product: Product
